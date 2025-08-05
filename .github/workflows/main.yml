@@ -48,4 +48,3 @@ jobs:
         run: |
           IMAGE_NAME=docker.io/${{ secrets.DOCKER_USERNAME }}/spring-boot-k8s-2
           docker push $IMAGE_NAME:latest
-          docker push $IMAGE_NAME:${{ github.sha }}
