@@ -18,7 +18,7 @@ public class DemoApplication {
     // Main endpoint for testing deployment
     @GetMapping("/")
     public String hello() {
-        return "Hello from Spring Boot on Kubernetes! - Build Time: " + Instant.now();
+        return "Hello from Spring Boot on Kubernetes and testing on argocd! - Build Time: " + Instant.now();
     }
 
     // Health check endpoint for readiness/liveness probes
